@@ -12,7 +12,23 @@ html, body {
   border: none;
   outline: none;
 }
-
+.btn.btn-icon.btn-lg {
+  height: calc(1.5em + 1.65rem + 2px);
+  width: calc(1.5em + 1.65rem + 2px);
+}
+.btn.btn-clean {
+  color: #6f6f86;
+  background-color: transparent;
+  border-color: transparent;
+}
+.topbar-item {
+  display: flex;
+  align-items: center;
+  margin-top: 60px !important;
+}
+.mr-5, .mx-5 {
+  margin-right: 1.25rem !important;
+}
 .screen-cover {
   position: fixed;
   top: 0;
@@ -38,6 +54,7 @@ aside {
   padding: 50px 24px;
   padding-bottom: 250px;
   height: 100vh;
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -56,6 +73,29 @@ aside #toggle-navbar {
 @media (min-width: 1200px) {
   .sidebar-logo {
     padding: 0 24px;
+    justify-content: center;
+  }
+}
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+}
+.sidebar-profile profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.symbol {
+  display: inline-block;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 0.42rem;
+}
+@media (min-width: 1200px) {
+  .sidebar-profile {
+    padding: 0 16px;
     justify-content: center;
   }
 }
@@ -151,9 +191,21 @@ aside #toggle-navbar {
 
 .nav-title {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  color: #121F3E;
+  font-size: 28px;
+  line-height: 34px;
+  color: #303C6C;
+}
+.name-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #150B3D;
+}
+.name-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
 }
 .nav-input-container {
   width: 100%;
@@ -208,6 +260,11 @@ aside #toggle-navbar {
     font-size: 16px;
     line-height: 24px;
   }
+}
+.img-profile {
+  position: absolute;
+  width: 46px;
+  height: 46px;
 }
 
 .content {
