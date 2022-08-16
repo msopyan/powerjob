@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/*--------------------------------
+
+LineIcons Web Font
+-------------------------------- */
+@font-face {
+  font-family: 'LineIcons';
+  src: url('../css/fonts/LineIcons.eot');
+  src: url('../css/fonts/LineIcons.eot') format('embedded-opentype'), url('../css/fonts/LineIcons.woff') format('woff2'), url('../../fonts/LineIcons.woff') format('woff'), url('../../fonts/LineIcons.ttf') format('truetype'), url('../../fonts/LineIcons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --------------------------------
+
+Reset
+
+-------------------------------- */
+
 html, body {
   font-family: "Poppins";
   font-style: normal;
@@ -548,123 +566,122 @@ aside #toggle-navbar {
   padding: 12px 16px;
   gap: 4px;
 }
-/* Stepper */
-.stepper {
-    .nav-tabs {
-        position: relative;
-    }
-    .nav-tabs > li {
-        width: 25%;
-        position: relative;
-        &:after {
-            content: '';
-            position: absolute;
-            background: #f1f1f1;
-            display: block;
-            width: 100%;
-            height: 5px;
-            top: 30px;
-            left: 50%;
-            z-index: 1;
-        }
-        &.completed {
-            &::after {
-                background: #34bc9b;
-            }
-        }
-        &:last-child {
-            &::after {
-                background: transparent;
-            }
-        }
-        &.active:last-child {
-            .round-tab {
-                background: #34bc9b;
-                &::after {
-                    content: '✔';
-                    color: #fff;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                    top: 0;
-                    display: block;
-                }
-            }
-        }
-    }
-    .nav-tabs [data-toggle='tab'] {
-        width: 25px;
-        height: 25px;
-        margin: 20px auto;
-        border-radius: 100%;
-        border: none;
-        padding: 0;
-        color: #f1f1f1;
-    }
-    .nav-tabs [data-toggle='tab']:hover {
-        background: transparent;
-        border: none;
-    }
-    .nav-tabs > .active > [data-toggle='tab'], .nav-tabs > .active > [data-toggle='tab']:hover, .nav-tabs > .active > [data-toggle='tab']:focus {
-        color: #34bc9b;
-        cursor: default;
-        border: none;
-    }
-    .tab-pane {
-        position: relative;
-        padding-top: 50px;
-    }
-    .round-tab {
-        width: 25px;
-        height: 25px;
-        line-height: 22px;
-        display: inline-block;
-        border-radius: 25px;
-        background: #fff;
-        border: 2px solid #34bc9b;
-        color: #34bc9b;
-        z-index: 2;
-        position: absolute;
-        left: 0;
-        text-align: center;
-        font-size: 14px;
-        
-    }
-    .completed .round-tab{
-    	background: #34bc9b;
-    	&::after {
-    		content: '✔';
-    		color: #fff;
-    		position: absolute;
-    		left: 0;
-    		right: 0;
-    		margin: 0 auto;
-    		top: 0;
-    		display: block;
-        }
-    }
-    .active .round-tab {
-        background: #fff;
-        border: 2px solid #34bc9b;
-        &:hover {
-            background: #fff;
-            border: 2px solid #34bc9b;
-        }
-        &::after {
-            display: none;
-        }
-    }
-    .disabled .round-tab {
-        background: #fff;
-        color: #f1f1f1;
-        border-color: #f1f1f1;
-        &:hover {
-            color: #4dd3b6;
-            border: 2px solid #a6dfd3;
-        }
-        &::after {
-            display: none;
-        }
-    }
+
+/* Inside Card List */
+/* Logo Company */
+.background-logo {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 0px;
+  top: 0px;
+  background: rgba(35, 108, 246, 0.1);
+  border-radius: 8px;
 }
+
+/* Filter */
+.filter {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.filter .filter-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter .filter-item .filter-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.filter .filter-item .filter-icon.award {
+  background: #F4F9EC;
+}
+.filter .filter-item .filter-icon.box {
+  background: #ECE9FF;
+}
+.filter .filter-item .filter-icon.globe {
+  background: #ECF7F9;
+}
+.filter .filter-item .filter-icon.target {
+  background: #FFDDED;
+}
+.filter .filter-item .filter-icon.database {
+  background: #FFF3E9;
+}
+.filter .filter-item .filter-icon img {
+  width: 24px;
+  height: 24px;
+}
+.filter .filter-item:not(:last-child) {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #F7F7FA;
+}
+.head-section {
+  position: relative;
+  height: 40px;
+}
+.filter-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: 0.0015em;
+  color: #434343;
+}
+.content-filter {
+  width: 332px;
+  background-color: #fff;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 20px;
+  height: auto;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.filter-category {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.category-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: 0.0015em;
+  color: #434343;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.category-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 149%;
+  /* identical to box height, or 24px */
+  letter-spacing: 0.0015em;
+  color: #434343;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+/* Stepper */
