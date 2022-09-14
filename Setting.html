@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/lineicon.css">
     <link rel="stylesheet" href="./assets/css/icon.css">
 
-    <title>PowerJobs | Portal Jobs Universe</title>
+    <title>Settings | Portal Jobs Universe</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
 
             <h5 class="sidebar-title">Daily Use</h5>
 
-            <a href="./index.html" class="sidebar-item active" onclick="toggleActive(this)">
+            <a href="./index.html" class="sidebar-item" onclick="toggleActive(this)">
                 <!-- <img src="./assets/img/global/grid.svg" alt=""> -->
 
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +99,7 @@
                 <span>Company</span>
             </a>
 
-            <a href="./setting.html" class="sidebar-item" onclick="toggleActive(this)">
+            <a href="./setting.html" class="sidebar-item active" onclick="toggleActive(this)">
                 <!-- <img src="./assets/img/global/settings.svg" alt=""> -->
 
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,7 +154,7 @@
                         <button id="toggle-navbar" onclick="toggleNavbar()">
                             <img src="./assets/img/global/burger.svg" class="mb-2" alt="">
                         </button>
-                        <h2 class="nav-title">Jobs</h2>
+                        <h2 class="nav-title">Setting</h2>
                     </div>
                     <button class="btn-notif d-block d-md-none"><img src="./assets/img/global/bell.svg" alt=""></button>
                 </div>
@@ -170,145 +170,50 @@
             </div>
 
             <div class="content">
-				      <div class="row mt-5">
+              <div class="row mt-5">
                 <div class="col-12 col-lg-12">
-                  <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                    <div class="title-group">
-                      <h2 class="content-title">Jobs List</h2>
-                      <h5 class="content-desc mb-4">Your list application for your accepted</h5>
-                    </div>
-                    <button type="button" class="btn btn-primary">
-                      <i class="fa fa-plus text-white">Post Job</i>
-                    </button>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-12 col-lg-4">
-                      <div class="filter">
-                        <div class="head-section">
-                          <h2 class="content-title">Filter</h2>
-                        </div>
-                        <div class="category">
-                          <div class="filter-category">
-                            <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                              <h5 class="category-title">Type Job</h5>
-                              <i class="lni lni-chevron-down"></i>
-                            </div>
-                            <h5 class="category-subtitle">Full Time</h5>
-                            <h5 class="category-subtitle">Part Time</h5>
-                            <h5 class="category-subtitle">Internship</h5>
-                          </div>
-                        </div>
-                        <div class="category">
-                          <div class="filter-category">
-                            <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                              <h5 class="category-title">Experience</h5>
-                              <i class="lni lni-chevron-down"></i>
-                            </div>
-                            <section class="experiencesection">
-                              <div class="slider-Container">
-                                <div class="rc-slider">
-
-                                </div>
-                              </div>
-                            </section>
-                          </div>
-                        </div>
-                        <div class="category">
-                          <div class="filter-category">
-                            <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                              <h5 class="category-title">Salary</h5>
-                              <i class="lni lni-chevron-down"></i>
-                            </div>
-                            <h5 class="category-subtitle">$0 - $5K</h5>
-                            <h5 class="category-subtitle">$6K - $10K</h5>
-                            <h5 class="category-subtitle">$11K - $15K</h5>
-                            <h5 class="category-subtitle">$16K - $20K</h5>
-                            <h5 class="category-subtitle">$20K - $25K</h5>
-                            <h5 class="category-subtitle">$26K - $30K</h5>
-                            <h5 class="category-subtitle">$31K - $40K</h5>
-                            <h5 class="category-subtitle">$41K - $50K</h5>
-                            <h5 class="category-subtitle">$51K - $100K</h5>
-                          </div>
-                        </div>
-                        <div class="category">
-                          <div class="filter-category">
-                            <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                              <h5 class="category-title">Departement</h5>
-                              <i class="lni lni-chevron-down"></i>
-                            </div>
-                            <h5 class="category-subtitle">Data & Analytics</h5>
-                            <h5 class="category-subtitle">Product & Design</h5>
-                            <h5 class="category-subtitle">Human Resources</h5>
-                            <h5 class="category-subtitle">Logistics & Operations</h5>
-                            <h5 class="category-subtitle">Legal, Finance & Accounting</h5>
-                            <h5 class="category-subtitle">Technology & Infrastructure</h5>
-                          </div>
-                        </div>
-                        <div class="category">
-                          <div class="filter-category">
-                            <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                              <h5 class="category-title">Location</h5>
-                              <i class="lni lni-chevron-down"></i>
-                            </div>
-                            <h5 class="category-subtitle">Jakarta</h5>
-                            <h5 class="category-subtitle">Bandung</h5>
-                            <h5 class="category-subtitle">Yogyakarta</h5>
-                            <h5 class="category-subtitle">Surabaya</h5>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-8">
-                      <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                        <h5 class="content-desc mb-4">1 - 10 of 200 Jobs In Tokopedia</h5>
-                        <h5 class="content-desc mb-4">Sort by : Relevance</h5>
-                      </div>
-                      <div class="document-card">
-                        <div class="title-group">
-                          <div class="background-logo">
-                            <img src="./assets/img/logo/tokopedia.png" class="mb-2" alt="">
-                          </div>
-                          <h2 class="content-title">Senior Project Manager</h2>
-                          <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                        </div>
-                      </div>
-                      <div class="document-card">
-                        <h2 class="content-title">Software Quality Assurance</h2>
-                        <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                      </div>
-                      <div class="document-card">
-                        <h2 class="content-title">Product Designer</h2>
-                        <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                      </div>
-                      <div class="document-card">
-                        <h2 class="content-title">Software Engineer Web Platform</h2>
-                        <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                      </div>
-                      <div class="document-card">
-                        <h2 class="content-title">Lead Designer</h2>
-                        <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                      </div>
-                      <div class="document-card">
-                        <h2 class="content-title">Site Reliability Engineer</h2>
-                        <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                      </div>
-                      <div class="document-card">
-                        <h2 class="content-title">System Engineer</h2>
-                        <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                      </div>
-                      <div class="document-card">
-                        <h2 class="content-title">Creative Director</h2>
-                        <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                      </div>
-                      <div class="document-card">
-                        <h2 class="content-title">Head of Product</h2>
-                        <h5 class="content-desc mb-4">Tokopedia . Jakarta, ID</h5>
-                      </div>
+                  <div class="document-card">
+                    <div class="tab-content">
+                      <!--begin:: MenuTable-->
+                      <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link cool-link active" href="#">Personal Info</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link cool-link" href="#">User Management</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link cool-link" href="#">Role & Privileges</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link cool-link" href="#">Site preferences</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link cool-link" href="#">Privacy and security</a>
+                          </li>
+                        </ul>
+                      </nav>
                     </div>
                   </div>
                 </div>
-				      </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-12 col-lg-12">
+                  <div class="document-card">
+                    <!--begin:: Personal Info-->
+                    <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
+                      <div class="title-group">
+                        <h2 class="content-title">Personal Info</h2>
+                        <h5 class="content-desc mb-4">Place your personal information and you can edit anything about personal data.</h5>
+                      </div>
+                      <button type="button" class="btn btn-primary">
+                        <i class="fa fa-plus text-white">Save</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
