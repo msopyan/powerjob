@@ -8,9 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+  
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/lineicon.css">
+    <link rel="stylesheet" href="./assets/css/lineicons.css">
     <link rel="stylesheet" href="./assets/css/icon.css">
 
     <title>PowerJobs | Portal Jobs Universe</title>
@@ -37,7 +37,7 @@
 
             <h5 class="sidebar-title">Daily Use</h5>
 
-            <a href="./index.html" class="sidebar-item active" onclick="toggleActive(this)">
+            <a href="./index.html" class="sidebar-item " onclick="toggleActive(this)">
                 <!-- <img src="./assets/img/global/grid.svg" alt=""> -->
 
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
 
             <!-- <a href="./employees.html" class="sidebar-item"> -->
             <!-- <img src="./assets/img/global/users.svg" alt=""> -->
-            <a href="./ListJob.html" class="sidebar-item" onclick="toggleActive(this)">
+            <a href="./ListJob.html" class="sidebar-item active" onclick="toggleActive(this)">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.34">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.71958 5.66406V4.08006C6.71958 3.37994 6.99733 2.70832 7.49259 2.21411C7.98786 1.71885 8.65945 1.44006 9.35958 1.44006H14.6396C15.3397 1.44006 16.0103 1.71885 16.5055 2.21411C17.0008 2.70832 17.2796 3.37994 17.2796 4.08006V5.66406H19.9196C20.6197 5.66406 21.2903 5.94285 21.7855 6.43811C22.2808 6.93232 22.5596 7.60394 22.5596 8.30406V19.9201C22.5596 20.6202 22.2808 21.2918 21.7855 21.7871C21.2903 22.2823 20.6197 22.5601 19.9196 22.5601C16.3397 22.5601 7.65942 22.5601 4.07958 22.5601C3.37945 22.5601 2.70786 22.2823 2.21259 21.7871C1.71733 21.2918 1.43958 20.6202 1.43958 19.9201V8.30406C1.43958 7.60394 1.71733 6.93232 2.21259 6.43811C2.70786 5.94285 3.37945 5.66406 4.07958 5.66406H6.71958ZM3.55158 12.4098V19.9201C3.55158 20.0605 3.60648 20.1946 3.70575 20.2939C3.80501 20.3932 3.93913 20.4481 4.07958 20.4481H19.9196C20.059 20.4481 20.1931 20.3932 20.2923 20.2939C20.3916 20.1946 20.4476 20.0605 20.4476 19.9201V12.4837L12.3248 15.1174C12.1105 15.186 11.8792 15.186 11.6648 15.1142L3.55158 12.4098ZM20.4476 10.2629V8.30406C20.4476 8.16467 20.3916 8.03056 20.2923 7.93129C20.1931 7.83203 20.059 7.77606 19.9196 7.77606C16.3397 7.77606 7.65942 7.77606 4.07958 7.77606C3.93913 7.77606 3.80501 7.83203 3.70575 7.93129C3.60648 8.03056 3.55158 8.16467 3.55158 8.30406V10.1837L12.0038 13.0012L20.4476 10.2629ZM15.1676 5.66406V4.08006C15.1676 3.94067 15.1116 3.80656 15.0123 3.70729C14.9131 3.60803 14.779 3.55206 14.6396 3.55206C13.1295 3.55206 10.8686 3.55206 9.35958 3.55206C9.21913 3.55206 9.08501 3.60803 8.98575 3.70729C8.88648 3.80656 8.83158 3.94067 8.83158 4.08006V5.66406H15.1676Z" fill="#333333"/>
@@ -177,8 +177,21 @@
                       <h2 class="content-title">Jobs List</h2>
                       <h5 class="content-desc mb-4">Your list application for your accepted</h5>
                     </div>
-                    <button type="button" class="btn btn-primary">
-                      <i class="fa fa-plus text-white">Post Job</i>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        </span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_656_2746)">
+                            <path d="M12.6667 13.8334H3.33341C3.1566 13.8334 2.98703 13.9036 2.86201 14.0286C2.73699 14.1537 2.66675 14.3232 2.66675 14.5C2.66675 14.6769 2.73699 14.8464 2.86201 14.9714C2.98703 15.0965 3.1566 15.1667 3.33341 15.1667H12.6667C12.8436 15.1667 13.0131 15.0965 13.1382 14.9714C13.2632 14.8464 13.3334 14.6769 13.3334 14.5C13.3334 14.3232 13.2632 14.1537 13.1382 14.0286C13.0131 13.9036 12.8436 13.8334 12.6667 13.8334Z" fill="white"/>
+                            <path d="M3.33329 12.5H3.39329L6.17329 12.2467C6.47782 12.2163 6.76264 12.0821 6.97995 11.8667L12.98 5.86665C13.2128 5.62063 13.3387 5.29233 13.3299 4.95368C13.3212 4.61503 13.1786 4.29366 12.9333 4.05999L11.1066 2.23332C10.8682 2.00938 10.5558 1.88089 10.2288 1.87229C9.90187 1.86368 9.58314 1.97557 9.33329 2.18665L3.33329 8.18665C3.1178 8.40396 2.98362 8.68879 2.95329 8.99332L2.66662 11.7733C2.65764 11.871 2.67031 11.9694 2.70373 12.0616C2.73715 12.1538 2.79049 12.2374 2.85995 12.3067C2.92225 12.3684 2.99612 12.4173 3.07735 12.4505C3.15857 12.4837 3.24555 12.5005 3.33329 12.5ZM10.18 3.16665L12 4.98665L10.6666 6.28665L8.87995 4.49999L10.18 3.16665ZM4.24662 9.10665L7.99995 5.37999L9.79995 7.17999L6.06662 10.9133L4.06662 11.1L4.24662 9.10665Z" fill="white"/>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_656_2746">
+                              <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </span>
+                      Post Job
                     </button>
                   </div>
                   
@@ -313,6 +326,67 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create Job Post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div height="800px" class="stepper" id="stepper2">
+              <div class="steps-container">
+                <div class="steps">
+                  <div class="step" icon="lni lni-pencil" id="1">
+                    <div class="step-title">
+                      <span class="step-number">01</span>
+                      <div class="step-text">Basic Information</div>
+                    </div>
+                  </div>
+                  <div class="step" icon="fa fa-info-circle" id="2">
+                    <div class="step-title">
+                      <span class="step-number">02</span>
+                      <div class="step-text">Personal Data</div>
+                    </div>
+                  </div>
+                  <div class="step" icon="fa fa-book-reader" id="3">
+                    <div class="step-title">
+                      <span class="step-number">03</span>
+                      <div class="step-text">Terms and Conditions</div>
+                    </div>
+                  </div>
+                  <div class="step" icon="fa fa-check" id="4">
+                    <div class="step-title">
+                      <span class="step-number">04</span>
+                      <div class="step-text">Finish</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="stepper-content-container">
+                <div class="stepper-content fade-in" stepper-label="1">
+                  <div>Step 1</div>
+                </div>
+                <div class="stepper-content fade-in" stepper-label="2">
+                  <div>Step 2</div>
+                </div>
+                <div class="stepper-content fade-in" stepper-label="3">
+                  <div>Step 3</div>
+                </div>
+                <div class="stepper-content fade-in" stepper-label="4">
+                  <div>Step 4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 

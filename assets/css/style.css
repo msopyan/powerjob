@@ -485,6 +485,10 @@ aside #toggle-navbar {
   border-radius: 50%;
   background: #F8F8FA;
 }
+.btn-primary {
+  width: auto;
+  height: 48px;
+}
 
 .employee-stat {
   height: 82px;
