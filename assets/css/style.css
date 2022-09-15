@@ -489,7 +489,10 @@ aside #toggle-navbar {
   width: auto;
   height: 48px;
 }
-
+.btn-secondary {
+  width: auto;
+  height: 48px;
+}
 .employee-stat {
   height: 82px;
 }
