@@ -36,7 +36,7 @@ html, body {
   //transition: width .3s;
 }
 
-.topbar-item {
+.profile-item {
   display: flex;
   align-items: center;
   margin-top: 60px !important;
@@ -71,10 +71,11 @@ html, body {
 
 aside {
   background-color: #fff;
-  padding: 50px 24px;
+  padding: 24px 24px;
   padding-bottom: 250px;
   height: 100vh;
   position: fixed;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: 2;
@@ -99,13 +100,26 @@ aside #toggle-navbar {
   display: flex;
   align-items: center;
 }
-.sidebar-profile profile {
+.sidebar-profile.profile {
+  text-decoration: none;
+  display: block;
+  background: transparent;
+  height: 46px;
+  border-radius: 16px;
+  padding: 0 11px;
+  margin-bottom: 8px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
 }
+.sidebar-profile span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #121F3E;
+}
+
 .symbol {
   display: inline-block;
   flex-shrink: 0;
@@ -215,12 +229,14 @@ aside #toggle-navbar {
   color: #303C6C;
 }
 .name-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   color: #150B3D;
 }
 .name-subtitle {
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
