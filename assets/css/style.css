@@ -75,7 +75,6 @@ aside {
   padding-bottom: 250px;
   height: 100vh;
   position: fixed;
-  overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: 2;
@@ -144,8 +143,8 @@ aside #toggle-navbar {
   font-size: 14px;
   line-height: 21px;
   color: #ABB3C4;
-  margin-top: 40px;
-  margin-bottom: 12px;
+  margin-top: 24px;
+  margin-bottom: 8px;
 }
 .sidebar-item {
   text-decoration: none;
@@ -202,7 +201,7 @@ aside #toggle-navbar {
 }
 @media (min-width: 1200px) {
   .nav {
-    padding: 50px 64px 24px 0px;
+    padding: 30px 30px 30px 0px;
   }
 }
 .nav .btn-notif {
