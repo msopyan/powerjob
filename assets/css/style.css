@@ -306,7 +306,7 @@ aside #toggle-navbar {
 }
 @media (min-width: 1200px) {
   .content {
-    padding: 0px 64px 0px 0px;
+    padding: 0px 30px 0px 0px;
   }
 }
 
@@ -326,6 +326,7 @@ aside #toggle-navbar {
   color: #ABB3C4;
 }
 .header-card {
+  width: 100%;
   padding: 20px;
   background: #3334CC;
   border-radius: 8px;
@@ -507,11 +508,6 @@ aside #toggle-navbar {
 .btn-secondary {
   width: auto;
   height: 48px;
-}
-.btn-secondary {
-  color: #4C4DDC;
-  background-color: #ffffff;
-  border-color: #ffffff;
 }
 .employee-stat {
   height: 82px;
