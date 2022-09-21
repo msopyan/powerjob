@@ -39,7 +39,7 @@ html, body {
 .profile-item {
   display: flex;
   align-items: center;
-  margin-top: 60px !important;
+  margin-top: 50px !important;
 }
 .mr-5, .mx-5 {
   margin-right: 1.25rem !important;
@@ -73,8 +73,10 @@ aside {
   background-color: #fff;
   padding: 24px 24px;
   padding-bottom: 250px;
+  width: 300px;
   height: 100vh;
   position: fixed;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   z-index: 2;
@@ -598,9 +600,8 @@ aside #toggle-navbar {
 /* Inside Card List */
 /* Logo Company */
 .background-logo {
-  position: absolute;
-  width: 43px;
-  height: 43px;
+  width: 75px;
+  height: 75px;
   left: 0px;
   top: 0px;
   background: rgba(35, 108, 246, 0.1);
@@ -737,4 +738,17 @@ aside #toggle-navbar {
   margin-top: 62px;
 }
 
-/* Footer */
+/* Filter */
+.type-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  padding: 0px;
+  gap: 16px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
