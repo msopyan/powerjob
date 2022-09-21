@@ -752,3 +752,9 @@ aside #toggle-navbar {
   order: 1;
   flex-grow: 0;
 }
+
+/* CheckBox */
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
