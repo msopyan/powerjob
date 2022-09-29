@@ -824,3 +824,22 @@ aside #toggle-navbar {
   height: auto;
   margin-right: 16px;
 }
+
+/* Login & Register */
+.bg-login {
+  background-color: #2563EB;
+  padding: 124px 124px;
+  padding-bottom: 250px;
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.login {
+  padding: 124px 124px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
