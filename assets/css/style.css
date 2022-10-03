@@ -13,7 +13,27 @@ html, body {
   border: none;
   outline: none;
 }
+.text-link {
+  display: inline-block;
+  color: #2563EB;
+  text-decoration: none;
+}
+.text-link.active {
+  color: #4640DE;
+  border-bottom: 1px solid #4640DE;
+}
+.text-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  background: #4C4DDC;
+  transition: width .3s;
+}
 
+.tex-link:hover::after {
+  width: 100%;
+  //transition: width .3s;
+}
 .cool-link {
   display: inline-block;
   color: #ABB3C4;
@@ -842,4 +862,15 @@ aside #toggle-navbar {
   top: 0;
   left: 0;
   z-index: 2;
+}
+.star {
+  color: #FDE047;
+}
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
+}
+.text-blue {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-blue-rgb),var(--bs-text-opacity))!important;
 }
